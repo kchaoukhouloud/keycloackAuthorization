@@ -5,17 +5,8 @@ This repository contains source code to demonstrate how to implement Authorizati
 ## Instructions to run the project
 
 - ### Run Keycloak
-    - Download Keycloak from https://www.keycloak.org/downloads
-    - If you are using standalone version, run the following command, by making sure you are inside the bin directory
-      `standalone.bat -Djboss.http.port=<port>`, you can provide whatever port number you like.
-
-- ### Importing Realm
-    - Instead of creating the realm, you can make use of the `realm-export.json` file to import all the realm details into your Keycloak instance.
-
-- ### Spring Boot Project
-    - Pre-Requisite: Make sure the Keycloak server is running.
-    - Run `mvn clean verify`
-    - Run `Oauth2PKCEDemoApplication` class.
+    - Download preconfigured Keycloak from https://mega.nz/file/YklT1Ybb#hrChUuO6m7CenhDChrE_80ql5HheLgBdwUH5v2lvER4
+    - run keycloak with kc.bat(/.sh) start-dev --http-port=8180
 
 - ### Running Angular Project
     - Go to the `src/main/resources/frontend` and run `npm install`
